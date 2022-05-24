@@ -1,0 +1,257 @@
+@import url("http://fonts.cdnfonts.com/css/proxima-nova-2");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.mainContainer {
+  max-width: 1200px;
+  margin: auto;
+}
+@media only screen and (max-width: 900px) {
+  .mainContainer {
+    margin: auto 20px;
+  }
+}
+
+.title h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 58px;
+}
+.title p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.price h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.price p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.link li a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #000;
+}
+.link li a:hover {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.button {
+  width: 150px;
+  padding: 10px 20px;
+  text-align: center;
+  background: #000;
+}
+.button button {
+  color: #ffffff;
+}
+.button:hover {
+  background: #ffffff;
+}
+.button:hover button {
+  color: #000;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+header .mainContainer .logo {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+header .mainContainer .navbar {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 900px) {
+  header .mainContainer .navbar {
+    justify-content: center;
+  }
+}
+header .mainContainer .link {
+  display: flex;
+}
+@media only screen and (max-width: 900px) {
+  header .mainContainer .link {
+    display: none;
+  }
+}
+header .mainContainer .link li {
+  margin-right: 30px;
+}
+header .mainContainer .navbutton button {
+  margin-left: 20px;
+}
+
+.banner {
+  background: url(../image/bannerf.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  padding: 50px 0;
+}
+@media only screen and (max-width: 1100px) {
+  .banner {
+    width: 100%;
+    margin: 20px;
+  }
+}
+.banner .mainContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.banner .title {
+  background: rgba(0, 0, 0, 0.3607843137);
+  width: 40%;
+  padding: 15px 30px;
+}
+@media only screen and (max-width: 900px) {
+  .banner .title {
+    width: 100%;
+  }
+}
+.banner .title h2 {
+  margin-bottom: 7px;
+  color: #ECECEC;
+}
+.banner .title p {
+  text-align: start;
+  margin-bottom: 30px;
+  color: #ECECEC;
+}
+
+.Products {
+  background: url(../image/productbgimage.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.Products .title {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+@media only screen and (max-width: 900px) {
+  .Products .title {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+.Products .title h2::after {
+  content: "";
+  height: 3px;
+  width: 120px;
+  background: #c4c4c4;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+.Products .mainContainer .container {
+  display: grid;
+  grid-template-columns: 41% 1fr 32%;
+  grid-template-rows: auto;
+  grid-template-areas: "product1 product2 product3" "product1 product2 product4";
+  column-gap: 20px;
+  row-gap: 40px;
+  align-items: end;
+}
+.Products .mainContainer .container img {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .Products .mainContainer .container {
+    display: block;
+  }
+}
+.Products .mainContainer .container .productItem-a {
+  position: relative;
+  grid-area: product1;
+}
+@media only screen and (max-width: 900px) {
+  .Products .mainContainer .container .productItem-a {
+    margin-bottom: 30px;
+  }
+}
+.Products .mainContainer .container .productItem-b {
+  position: relative;
+  grid-area: product2;
+  height: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .Products .mainContainer .container .productItem-b {
+    margin-bottom: 30px;
+  }
+}
+.Products .mainContainer .container .productItem-c {
+  position: relative;
+  grid-area: product3;
+  height: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .Products .mainContainer .container .productItem-c {
+    margin-bottom: 30px;
+  }
+}
+.Products .mainContainer .container .productItem-d {
+  position: relative;
+  grid-area: product4;
+  height: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .Products .mainContainer .container .productItem-d {
+    margin-bottom: 30px;
+  }
+}
+.Products .mainContainer .container .productImage {
+  height: 100%;
+}
+.Products .mainContainer .container .price {
+  border: 1px solid #ffffff;
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -17px;
+  color: #ffffff;
+  background: #000;
+  padding: 20px 10px;
+}
+@media only screen and (max-width: 900px) {
+  .Products .mainContainer .container .price {
+    position: relative;
+    width: 100%;
+    bottom: 5px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
