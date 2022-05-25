@@ -1,0 +1,90 @@
+.CreativeSolutions {
+    background: url(../image/productbgimage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .mainContainer {
+        width: 100%;
+        .container {
+            img {
+                width: 100%;
+            }
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 30%;
+            grid-template-rows: auto;
+            grid-template-areas: "title title  . image4" "image1 image2 image3 image4" "row3 . . image4";
+            column-gap: 20px;
+            row-gap: 13px;
+            @media only screen and (max-width: 900px) {
+                display: block;
+            }
+        }
+        .title {
+            grid-area: title;
+            h2 {
+                line-height: 40px;
+                @media only screen and (max-width: 900px) {
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+            }
+            @media only screen and (max-width: 900px) {
+                margin-bottom: 30px;
+            }
+        }
+        .title-a {
+            grid-area: image1;
+            @media only screen and (max-width: 900px) {
+                margin-bottom: 30px;
+            }
+        }
+        .title-b {
+            grid-area: image2;
+            @media only screen and (max-width: 900px) {
+                margin-bottom: 30px;
+            }
+        }
+        .title-c {
+            grid-area: image3;
+            @media only screen and (max-width: 900px) {
+                margin-bottom: 30px;
+            }
+        }
+        .title-d {
+            grid-area: image4;
+            height: 100%;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .play {
+                width: 200px;
+                background: #ffffff;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                padding: 20px;
+                bottom: 0px;
+                right: 0px;
+                img {
+                    width: 30%;
+                    margin-right: 10px;
+                }
+            }
+            @media only screen and (max-width: 900px) {
+                margin-bottom: 20px;
+            }
+        }
+        .title-e {
+            grid-area: row3;
+            .button {
+                @media only screen and (max-width: 500px) {
+                    margin-top: 30px;
+                    margin: auto;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

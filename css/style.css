@@ -1,4 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/proxima-nova-2");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +19,8 @@ body {
 }
 @media only screen and (max-width: 900px) {
   .mainContainer {
-    margin: auto 20px;
+    margin: auto;
+    padding: 0px 20px;
   }
 }
 
@@ -28,6 +30,43 @@ body {
   line-height: 58px;
 }
 .title p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+@media only screen and (max-width: 900px) {
+  .title {
+    width: 100%;
+  }
+}
+
+.titlelist {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+@media only screen and (max-width: 900px) {
+  .titlelist {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+.titlelist h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 58px;
+}
+.titlelist h2::after {
+  content: "";
+  height: 3px;
+  width: 120px;
+  background: #c4c4c4;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+.titlelist p {
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -77,6 +116,36 @@ button {
   border: none;
 }
 
+.submit h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+.submit li {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.submit li a {
+  color: #A4A4A4;
+}
+.submit li a:hover {
+  color: #ffffff;
+}
+.submit p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #A4A4A4;
+}
+.submit p:hover {
+  color: #ffffff;
+}
+
 header .mainContainer .logo {
   display: flex;
   justify-content: center;
@@ -118,7 +187,6 @@ header .mainContainer .navbutton button {
 @media only screen and (max-width: 1100px) {
   .banner {
     width: 100%;
-    margin: 20px;
   }
 }
 .banner .mainContainer {
@@ -252,6 +320,334 @@ header .mainContainer .navbutton button {
     width: 100%;
     bottom: 5px;
   }
+}
+
+.banner2 {
+  background: none;
+  margin: 40px 0;
+}
+.banner2 .mainContainer .bannerView {
+  background: url(../image/banners.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  height: 400px;
+  margin-right: 0 !important;
+  margin: auto;
+  position: relative;
+}
+@media only screen and (max-width: 500px) {
+  .banner2 .mainContainer .bannerView {
+    display: none;
+  }
+}
+.banner2 .mainContainer .title {
+  width: 40%;
+  padding: 20px;
+  position: absolute;
+  bottom: 9%;
+  left: -111px;
+  background: #F7F7F7;
+}
+@media only screen and (max-width: 900px) {
+  .banner2 .mainContainer .title {
+    position: relative;
+    width: 100%;
+    bottom: -50px;
+  }
+}
+.banner2 .mainContainer .title h2 {
+  color: #000;
+}
+.banner2 .mainContainer .title p {
+  color: #000;
+  padding: 20px 0;
+}
+
+.CreativeSolutions {
+  background: url(../image/productbgimage.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.CreativeSolutions .mainContainer {
+  width: 100%;
+}
+.CreativeSolutions .mainContainer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 30%;
+  grid-template-rows: auto;
+  grid-template-areas: "title title  . image4" "image1 image2 image3 image4" "row3 . . image4";
+  column-gap: 20px;
+  row-gap: 13px;
+}
+.CreativeSolutions .mainContainer .container img {
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .CreativeSolutions .mainContainer .container {
+    display: block;
+  }
+}
+.CreativeSolutions .mainContainer .title {
+  grid-area: title;
+}
+.CreativeSolutions .mainContainer .title h2 {
+  line-height: 40px;
+}
+@media only screen and (max-width: 900px) {
+  .CreativeSolutions .mainContainer .title h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .CreativeSolutions .mainContainer .title {
+    margin-bottom: 30px;
+  }
+}
+.CreativeSolutions .mainContainer .title-a {
+  grid-area: image1;
+}
+@media only screen and (max-width: 900px) {
+  .CreativeSolutions .mainContainer .title-a {
+    margin-bottom: 30px;
+  }
+}
+.CreativeSolutions .mainContainer .title-b {
+  grid-area: image2;
+}
+@media only screen and (max-width: 900px) {
+  .CreativeSolutions .mainContainer .title-b {
+    margin-bottom: 30px;
+  }
+}
+.CreativeSolutions .mainContainer .title-c {
+  grid-area: image3;
+}
+@media only screen and (max-width: 900px) {
+  .CreativeSolutions .mainContainer .title-c {
+    margin-bottom: 30px;
+  }
+}
+.CreativeSolutions .mainContainer .title-d {
+  grid-area: image4;
+  height: 100%;
+  position: relative;
+}
+.CreativeSolutions .mainContainer .title-d img {
+  width: 100%;
+  height: 100%;
+}
+.CreativeSolutions .mainContainer .title-d .play {
+  width: 200px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding: 20px;
+  bottom: 0px;
+  right: 0px;
+}
+.CreativeSolutions .mainContainer .title-d .play img {
+  width: 30%;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 900px) {
+  .CreativeSolutions .mainContainer .title-d {
+    margin-bottom: 20px;
+  }
+}
+.CreativeSolutions .mainContainer .title-e {
+  grid-area: row3;
+}
+@media only screen and (max-width: 500px) {
+  .CreativeSolutions .mainContainer .title-e .button {
+    margin-top: 30px;
+    margin: auto;
+    width: 80%;
+  }
+}
+
+.Projects {
+  background: url(../image/productbgimage.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 30px 0;
+}
+.Projects .button {
+  margin: auto;
+}
+@media only screen and (max-width: 500px) {
+  .Projects .button {
+    width: 80%;
+  }
+}
+.Projects .mainContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.Projects .mainContainer img {
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .Projects .mainContainer {
+    display: block;
+  }
+}
+.Projects .mainContainer .projectlist {
+  flex-basis: 23%;
+  text-align: center;
+}
+.Projects .mainContainer .projectlist .ProjectsImage {
+  margin-bottom: 20px;
+}
+.Projects .mainContainer .projectlist .price {
+  margin-bottom: 30px;
+}
+
+.tileCollections .button {
+  margin: auto;
+  margin-top: 30px;
+  width: 200px;
+}
+@media only screen and (max-width: 500px) {
+  .tileCollections .button {
+    margin: auto;
+    width: 80%;
+  }
+}
+.tileCollections .mainContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .tileCollections .mainContainer {
+    display: block;
+  }
+}
+.tileCollections .mainContainer img {
+  width: 100%;
+}
+.tileCollections .mainContainer .projectlist {
+  flex-basis: 24%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.tileCollections .mainContainer .projectlist .price {
+  margin-top: 20px;
+}
+.tileCollections .mainContainer .projectlist .price span {
+  font-size: 10px;
+  text-decoration: line-through;
+  color: #CACACA;
+}
+.tileCollections .mainContainer .projectlist .price span:last-child {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.lastBanner {
+  background: none;
+  margin-top: 100px;
+}
+.lastBanner .mainContainer {
+  width: 100%;
+}
+.lastBanner .mainContainer img {
+  width: 60%;
+}
+@media only screen and (max-width: 900px) {
+  .lastBanner .mainContainer img {
+    width: 100%;
+  }
+}
+.lastBanner .mainContainer .bannerView {
+  position: relative;
+}
+.lastBanner .mainContainer .head .title {
+  width: 55%;
+  right: -18px;
+  top: 17%;
+  padding: 60px;
+  position: absolute;
+  background: #F7F7F7;
+}
+@media only screen and (max-width: 900px) {
+  .lastBanner .mainContainer .head .title {
+    position: relative;
+    width: 100%;
+    right: 0;
+    top: 0;
+  }
+}
+.lastBanner .mainContainer .head .title h2 {
+  color: #000;
+}
+.lastBanner .mainContainer .head .title p {
+  padding: 40px 0;
+  color: #000;
+}
+footer {
+  background: #111010;
+  color: #ffffff;
+}
+footer .lastFooter {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
+  padding: 20px;
+}
+@media only screen and (max-width: 900px) {
+  footer .lastFooter {
+    display: block;
+    margin: 0;
+  }
+}
+footer .lastFooter p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 9px;
+}
+@media only screen and (max-width: 900px) {
+  footer .lastFooter p {
+    padding-bottom: 20px;
+  }
+}
+footer .mainContainer {
+  padding: 40px 0;
+}
+@media only screen and (max-width: 900px) {
+  footer .mainContainer {
+    padding: 20px 0 10px 20px;
+  }
+}
+footer .mainContainer .footerSub {
+  display: flex;
+}
+@media only screen and (max-width: 900px) {
+  footer .mainContainer .footerSub {
+    display: block;
+  }
+}
+footer .mainContainer .submit {
+  flex-basis: 25%;
+}
+footer .mainContainer .submit .social {
+  margin-top: 50px;
+}
+@media only screen and (max-width: 900px) {
+  footer .mainContainer .submit .social {
+    margin: 20px 0;
+  }
+}
+footer .mainContainer .submit .social i {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

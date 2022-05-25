@@ -1,0 +1,33 @@
+.Projects {
+    background: url(../image/productbgimage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 30px 0;
+    .button {
+        margin: auto;
+        @media only screen and (max-width: 500px) {
+            width: 80%;
+        }
+    }
+    .mainContainer {
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 100%;
+        }
+        @media only screen and (max-width: 900px) {
+            display: block;
+        }
+        .projectlist {
+            flex-basis: 23%;
+            text-align: center;
+            .ProjectsImage {
+                margin-bottom: 20px;
+            }
+            .price {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

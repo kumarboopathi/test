@@ -1,4 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/proxima-nova-2');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +17,8 @@ body {
     max-width: 1200px;
     margin: auto;
     @media only screen and (max-width: 900px) {
-        margin: auto 20px;
+        margin: auto;
+        padding: 0px 20px;
     }
 }
 
@@ -25,6 +27,39 @@ body {
         font-size: 30px;
         font-weight: 700;
         line-height: 58px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    @media only screen and (max-width: 900px) {
+        width: 100%;
+    }
+}
+
+.titlelist {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+    @media only screen and (max-width: 900px) {
+        width: 100%;
+        padding: 0 10px;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 58px;
+        &::after {
+            content: "";
+            height: 3px;
+            width: 120px;
+            background: #c4c4c4;
+            margin: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
     }
     p {
         font-size: 18px;
@@ -81,4 +116,36 @@ button {
     background: none;
     outline: none;
     border: none;
+}
+
+.submit {
+    h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+    li {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        a {
+            color: #A4A4A4;
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #A4A4A4;
+        &:hover {
+            color: #ffffff;
+        }
+    }
 }

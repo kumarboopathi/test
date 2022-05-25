@@ -1,0 +1,40 @@
+.lastBanner {
+    background: none;
+    margin-top: 100px;
+    .mainContainer {
+        width: 100%;
+        img {
+            width: 60%;
+            @media only screen and (max-width: 900px) {
+                width: 100%;
+            }
+        }
+        .bannerView {
+            position: relative;
+        }
+        .head {
+            .title {
+                @media only screen and (max-width: 900px) {
+                    position: relative;
+                    width: 100%;
+                    right: 0;
+                    top: 0;
+                }
+                width: 55%;
+                right: -18px;
+                top: 17%;
+                padding: 60px;
+                position: absolute;
+                background: #F7F7F7;
+                h2 {
+                    color: #000;
+                }
+                p {
+                    padding: 40px 0;
+                    color: #000;
+                    @media only screen and (max-width: 900px) {}
+                }
+            }
+        }
+    }
+}

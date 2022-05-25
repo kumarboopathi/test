@@ -1,0 +1,40 @@
+.banner2 {
+    background: none;
+    margin: 40px 0;
+    .mainContainer {
+        .bannerView {
+            background: url(../image/banners.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 90%;
+            height: 400px;
+            margin-right: 0 !important;
+            margin: auto;
+            position: relative;
+            @media only screen and (max-width: 500px) {
+                display: none;
+            }
+        }
+        .title {
+            width: 40%;
+            padding: 20px;
+            position: absolute;
+            bottom: 9%;
+            left: -111px;
+            background: #F7F7F7;
+            @media only screen and (max-width: 900px) {
+                position: relative;
+                width: 100%;
+                bottom: -50px;
+            }
+            h2 {
+                color: #000;
+            }
+            p {
+                color: #000;
+                padding: 20px 0;
+            }
+        }
+    }
+}
