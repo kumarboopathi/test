@@ -436,6 +436,12 @@ header .mainContainer .navbutton button {
   height: 100%;
   position: relative;
 }
+@media only screen and (max-width: 700px) {
+  .CreativeSolutions .mainContainer .title-d img {
+    width: 100%;
+    height: auto;
+  }
+}
 .CreativeSolutions .mainContainer .title-d img {
   width: 100%;
   height: 100%;
@@ -556,9 +562,6 @@ header .mainContainer .navbutton button {
   background: none;
   margin-top: 100px;
 }
-.lastBanner .mainContainer {
-  width: 100%;
-}
 .lastBanner .mainContainer img {
   width: 60%;
 }
@@ -569,6 +572,7 @@ header .mainContainer .navbutton button {
 }
 .lastBanner .mainContainer .bannerView {
   position: relative;
+  width: 100%;
 }
 .lastBanner .mainContainer .head .title {
   width: 55%;
@@ -589,10 +593,22 @@ header .mainContainer .navbutton button {
 .lastBanner .mainContainer .head .title h2 {
   color: #000;
 }
+@media only screen and (max-width: 500px) {
+  .lastBanner .mainContainer .head .title h2 {
+    line-height: 30px;
+    font-size: 25px;
+  }
+}
 .lastBanner .mainContainer .head .title p {
   padding: 40px 0;
   color: #000;
 }
+@media only screen and (max-width: 500px) {
+  .lastBanner .mainContainer .head .title p {
+    padding: 30px 0;
+  }
+}
+
 footer {
   background: #111010;
   color: #ffffff;
