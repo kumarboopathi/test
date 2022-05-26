@@ -97,18 +97,17 @@ body {
 }
 
 .button {
-    button {
+    a {
         color: #ffffff;
     }
     width: 150px;
     padding: 10px 20px;
     text-align: center;
-    background: #000;
     &:hover {
-        button {
+        background: #ffffff;
+        a {
             color: #000;
         }
-        background: #ffffff;
     }
 }
 
@@ -125,16 +124,21 @@ button {
         font-weight: 600;
         line-height: 21px;
         margin-bottom: 20px;
+        @media only screen and (max-width: 700px) {
+            margin-top: 10px;
+        }
     }
-    li {
-        font-family: 'Poppins', sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        a {
-            color: #A4A4A4;
-            &:hover {
-                color: #ffffff;
+    ul {
+        li {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            a {
+                color: #A4A4A4;
+                &:hover {
+                    color: #ffffff;
+                }
             }
         }
     }
@@ -147,5 +151,29 @@ button {
         &:hover {
             color: #ffffff;
         }
+    }
+}
+
+.hoverSection {
+    h3 {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 25px;
+        color: #ffffff;
+    }
+    p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #BCBCBC;
+    }
+    h5 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #BCBCBC;
+    }
+    &:hover {
+        // background: #000;
     }
 }

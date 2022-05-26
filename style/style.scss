@@ -3,10 +3,16 @@
 @import"./variable";
 @import"./header";
 @import"./banner";
-@import"./Products";
+@import"./products";
 @import"./banner2";
-@import"./CreativeSolutions";
-@import"./Projects";
-@import"./TileCollections";
-@import"./LastBanner";
+@import"./creativeSolutions";
+@import"./projects";
+@import"./tileCollections";
+@import"./lastBanner";
 @import"./footer";
+@import"./catalog";
+@import"./category";
+@import"./categoryProduct";
+html {
+    scroll-behavior: smooth;
+}
