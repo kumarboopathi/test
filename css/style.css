@@ -151,7 +151,7 @@ body {
   color: #ffffff;
 }
 .button:hover {
-  background: #aa9d9d;
+  background: #b85252;
 }
 .button:hover a {
   color: #000;
@@ -159,7 +159,7 @@ body {
 
 .redeem {
   width: 150px;
-  padding: 7px 20px;
+  padding: 9px 20px;
   text-align: center;
   background: #000;
 }
@@ -167,13 +167,23 @@ body {
   color: #ffffff;
 }
 .redeem:hover {
-  background: #aa9d9d;
+  background: #b85252;
 }
 .redeem:hover a {
-  color: #000;
+  color: #ffffff;
 }
 
-.shop .button button {
+.shop .button button,
+.shop .button a {
+  width: 150px;
+  padding: 10px 20px;
+  text-align: center;
+  background: #000;
+  color: #ffffff;
+  margin: 0 20px;
+}
+
+.shop .button a {
   width: 150px;
   padding: 10px 20px;
   text-align: center;
@@ -1227,12 +1237,13 @@ footer .mainContainer .submit .social i {
 }
 .cartTable .mainContainer .content .checkout .cout .code .in input {
   width: 150px;
-  padding: 7px 10px;
+  padding: 9px 10px;
   font-size: 15px;
   font-weight: 600;
   color: #000;
+  margin: 0 10px;
 }
-.cartTable .mainContainer .content .checkout .cout .code .in .redeem a {
+.cartTable .mainContainer .content .checkout .cout .code .in .reddem button {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 600;
@@ -1268,7 +1279,7 @@ footer .mainContainer .submit .social i {
   width: 100%;
   margin: auto;
 }
-.cartTable .mainContainer .content .checkout .cout .safe button {
+.cartTable .mainContainer .content .checkout .cout .safe a {
   color: #ffffff;
   font-family: Poppins;
   font-size: 14px;
@@ -1496,6 +1507,9 @@ footer .mainContainer .submit .social i {
 .cartFormSection .mainContainer .content .order .checkout .cout .delivery .SubTotal {
   margin-bottom: 0;
 }
+.cartFormSection .mainContainer .content .order .checkout .cout .delivery .SubTotal .sub span:last-child {
+  text-align: end;
+}
 .cartFormSection .mainContainer .content .order .checkout .safCheckout {
   background: #FAFAFA;
   padding: 20px 20px;
@@ -1504,7 +1518,7 @@ footer .mainContainer .submit .social i {
   margin-bottom: 10px;
   width: 100%;
 }
-.cartFormSection .mainContainer .content .order .checkout .safCheckout .safe button {
+.cartFormSection .mainContainer .content .order .checkout .safCheckout .safe a {
   color: #ffffff;
   font-family: Poppins;
   font-size: 14px;

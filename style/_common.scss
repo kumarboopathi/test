@@ -154,7 +154,7 @@ body {
     text-align: center;
     background: #000;
     &:hover {
-        background: #aa9d9d;
+        background: #b85252;
         a {
             color: #000;
         }
@@ -166,20 +166,34 @@ body {
         color: #ffffff;
     }
     width: 150px;
-    padding: 7px 20px;
+    padding: 9px 20px;
     text-align: center;
     background: #000;
     &:hover {
-        background: #aa9d9d;
+        background: #b85252;
         a {
-            color: #000;
+            color: #ffffff;
         }
     }
 }
 
 .shop {
     .button {
-        button {
+        button,
+        a {
+            width: 150px;
+            padding: 10px 20px;
+            text-align: center;
+            background: #000;
+            color: #ffffff;
+            margin: 0 20px;
+        }
+    }
+}
+
+.shop {
+    .button {
+        a {
             width: 150px;
             padding: 10px 20px;
             text-align: center;

@@ -231,6 +231,13 @@
                                 margin-bottom: 30px;
                                 .SubTotal {
                                     margin-bottom: 0;
+                                    .sub {
+                                        span {
+                                            &:last-child {
+                                                text-align: end;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -240,7 +247,7 @@
                             .safe {
                                 margin-bottom: 10px;
                                 width: 100%;
-                                button {
+                                a {
                                     color: #ffffff;
                                     font-family: Poppins;
                                     font-size: 14px;
