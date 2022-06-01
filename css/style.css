@@ -40,6 +40,53 @@ body {
   }
 }
 
+.container .title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 58px;
+}
+.container .title p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+@media only screen and (max-width: 900px) {
+  .container .title {
+    width: 100%;
+  }
+}
+
+.related .titlelist {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+@media only screen and (max-width: 900px) {
+  .related .titlelist {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+.related .titlelist h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 58px;
+}
+.related .titlelist h2::after {
+  content: "";
+  height: 3px;
+  width: 120px;
+  background: #c4c4c4;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+  display: none;
+}
+
 .titlelist {
   width: 50%;
   margin: auto;
@@ -98,15 +145,41 @@ body {
   width: 150px;
   padding: 10px 20px;
   text-align: center;
+  background: #000;
 }
 .button a {
   color: #ffffff;
 }
 .button:hover {
-  background: #ffffff;
+  background: #aa9d9d;
 }
 .button:hover a {
   color: #000;
+}
+
+.redeem {
+  width: 150px;
+  padding: 7px 20px;
+  text-align: center;
+  background: #000;
+}
+.redeem a {
+  color: #ffffff;
+}
+.redeem:hover {
+  background: #aa9d9d;
+}
+.redeem:hover a {
+  color: #000;
+}
+
+.shop .button button {
+  width: 150px;
+  padding: 10px 20px;
+  text-align: center;
+  background: #000;
+  color: #ffffff;
+  margin: 0 20px;
 }
 
 button {
@@ -168,6 +241,7 @@ button {
   line-height: 28px;
   color: #BCBCBC;
 }
+
 header .mainContainer .logo {
   display: flex;
   justify-content: center;
@@ -194,7 +268,8 @@ header .mainContainer .link {
 header .mainContainer .link li {
   margin-right: 30px;
 }
-header .mainContainer .navbutton button {
+header .mainContainer .navbutton a {
+  color: #000;
   margin-left: 20px;
 }
 
@@ -582,7 +657,7 @@ header .mainContainer .navbutton button {
 
 .lastBanner {
   background: none;
-  margin-top: 100px;
+  margin: 100px 0;
 }
 .lastBanner .mainContainer img {
   width: 60%;
@@ -848,6 +923,633 @@ footer .mainContainer .submit .social i {
 }
 .categoryProduct .mainContainer .advertisement .title p {
   width: 65%;
+}
+
+.productDetail {
+  background: #161414;
+}
+.productDetail .mainContainer {
+  background: url(../image/productbgimage.png);
+}
+.productDetail .mainContainer .next {
+  display: flex;
+}
+.productDetail .mainContainer .next li {
+  margin-right: 10px;
+  padding: 30px 0;
+}
+.productDetail .mainContainer .next li::after {
+  content: "";
+  border: solid rgb(238, 232, 232);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-left: 6px;
+}
+.productDetail .mainContainer .next li a {
+  color: #ffffff;
+}
+.productDetail .mainContainer .next li:hover {
+  text-decoration: underline;
+  color: rgb(100, 87, 87);
+}
+.productDetail .mainContainer .next li:last-child::after {
+  display: none;
+}
+
+.productGrid .mainContainer .container {
+  display: grid;
+  grid-template-columns: 15% 15% 24% 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "leftside leftside leftside rightside rightside" "down1 down2 down3 . .";
+  column-gap: 20px;
+  row-gap: 20px;
+}
+@media only screen and (max-width: 900px) {
+  .productGrid .mainContainer .container {
+    display: block;
+  }
+}
+.productGrid .mainContainer .container .itemOne {
+  grid-area: leftside;
+}
+@media only screen and (max-width: 900px) {
+  .productGrid .mainContainer .container .itemOne img {
+    width: 100%;
+  }
+}
+.productGrid .mainContainer .container .itemTwo {
+  grid-area: rightside;
+}
+@media only screen and (max-width: 900px) {
+  .productGrid .mainContainer .container .itemTwo {
+    width: 100%;
+  }
+}
+.productGrid .mainContainer .container .itemTwo .title {
+  margin: 30px 0;
+}
+.productGrid .mainContainer .container .itemTwo .title h2 {
+  line-height: 40px;
+}
+.productGrid .mainContainer .container .itemTwo .title h5 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.productGrid .mainContainer .container .itemTwo .title p {
+  line-height: 33px;
+}
+@media only screen and (max-width: 900px) {
+  .productGrid .mainContainer .container .itemTwo .title .addlist {
+    width: 70%;
+    margin: auto;
+  }
+}
+.productGrid .mainContainer .container .itemTwo .title .addlist li {
+  list-style: disc;
+  line-height: 30px;
+}
+.productGrid .mainContainer .container .itemTwo .addItem {
+  display: flex;
+  margin: 60px 0 20px 0;
+  align-items: center;
+}
+@media only screen and (max-width: 900px) {
+  .productGrid .mainContainer .container .itemTwo .addItem {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .productGrid .mainContainer .container .itemTwo .addItem {
+    display: block;
+  }
+}
+.productGrid .mainContainer .container .itemTwo .addItem .numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 8px 20px;
+}
+.productGrid .mainContainer .container .itemTwo .addItem .numbers img img {
+  display: inline-block;
+}
+.productGrid .mainContainer .container .itemTwo .addItem .numbers input {
+  display: inline-block;
+  width: 10px;
+  border: none;
+  outline: none;
+  margin: 0 20px;
+}
+.productGrid .mainContainer .container .itemTwo .shop {
+  display: flex;
+  align-items: center;
+}
+.productGrid .mainContainer .container .itemTwo .shop i {
+  border: 1px solid black;
+  padding: 8px;
+}
+.productGrid .mainContainer .container .itemThree {
+  grid-area: down1;
+}
+@media only screen and (max-width: 900px) {
+  .productGrid .mainContainer .container .itemThree {
+    display: none;
+  }
+}
+.productGrid .mainContainer .container .itemFour {
+  grid-area: down2;
+}
+@media only screen and (max-width: 900px) {
+  .productGrid .mainContainer .container .itemFour {
+    display: none;
+  }
+}
+.productGrid .mainContainer .container .itemFive {
+  grid-area: down3;
+}
+@media only screen and (max-width: 900px) {
+  .productGrid .mainContainer .container .itemFive {
+    display: none;
+  }
+}
+
+.recentlyViewed {
+  margin-bottom: 50px;
+}
+
+.productContent .mainContainer .atag {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 30px 0;
+}
+.productContent .mainContainer .atag li {
+  margin-right: 20px;
+}
+.productContent .mainContainer .atag li a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Poppins;
+}
+.productContent .mainContainer .pcontent {
+  width: 80%;
+  margin: auto;
+}
+.productContent .mainContainer .pcontent p {
+  line-height: 25px;
+  font-family: Poppins;
+}
+
+.cartPage {
+  background: linear-gradient(180deg, #C4C4C4 0%, rgba(196, 196, 196, 0) 100%);
+}
+.cartPage .mainContainer .shopping {
+  padding: 30px 0;
+}
+.cartPage .mainContainer .shopping h2 {
+  margin-bottom: 10px;
+}
+.cartPage .mainContainer .shopping ul li {
+  display: flex;
+}
+.cartPage .mainContainer .shopping ul li img {
+  margin-right: 8px;
+}
+.cartPage .mainContainer .shopping ul li a {
+  color: #000;
+}
+
+.cartTable {
+  margin-top: 40px;
+}
+.cartTable .mainContainer .content {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 900px) {
+  .cartTable .mainContainer .content {
+    display: block;
+    width: 100%;
+  }
+}
+.cartTable .mainContainer .content .table {
+  flex-basis: 65%;
+  background: #FAFAFA;
+}
+.cartTable .mainContainer .content .table thead th {
+  padding-top: 20px;
+}
+@media only screen and (max-width: 900px) {
+  .cartTable .mainContainer .content .table thead th {
+    font-size: 10px;
+  }
+}
+.cartTable .mainContainer .content .table tbody td {
+  padding: 20px 30px;
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .cartTable .mainContainer .content .table tbody td {
+    padding: 10px 10px;
+  }
+}
+.cartTable .mainContainer .content .table tbody .data {
+  display: flex;
+  align-items: center;
+}
+.cartTable .mainContainer .content .table tbody .data .dataName {
+  margin-left: 10px;
+}
+@media only screen and (max-width: 900px) {
+  .cartTable .mainContainer .content .table tbody .data .dataName {
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .cartTable .mainContainer .content .table tbody .data .dataName h5 {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .cartTable .mainContainer .content .table tbody .data .dataName p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .cartTable .mainContainer .content .table tbody .data {
+    display: block;
+  }
+}
+.cartTable .mainContainer .content .table tbody .dataPrice {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 2px;
+  width: 60px;
+}
+.cartTable .mainContainer .content .table tbody .dataPrice input {
+  width: 10px;
+  border: none;
+  outline: none;
+}
+.cartTable .mainContainer .content .checkout {
+  flex-basis: 30%;
+}
+.cartTable .mainContainer .content .checkout .cout {
+  background: #FAFAFA;
+  padding: 20px;
+}
+.cartTable .mainContainer .content .checkout .cout .voucher {
+  margin-bottom: 30px;
+}
+.cartTable .mainContainer .content .checkout .cout .voucher p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.cartTable .mainContainer .content .checkout .cout .voucher p span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #A7A7A7;
+}
+.cartTable .mainContainer .content .checkout .cout .code {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.cartTable .mainContainer .content .checkout .cout .code .in input {
+  width: 150px;
+  padding: 7px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+.cartTable .mainContainer .content .checkout .cout .code .in .redeem a {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+}
+.cartTable .mainContainer .content .checkout .cout .SubTotal {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.cartTable .mainContainer .content .checkout .cout .SubTotal .sub p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.cartTable .mainContainer .content .checkout .cout .SubTotal .sub span {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  color: #A7A7A7;
+}
+.cartTable .mainContainer .content .checkout .cout .amount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 10px;
+}
+.cartTable .mainContainer .content .checkout .cout .safe {
+  width: 100%;
+  margin: auto;
+}
+.cartTable .mainContainer .content .checkout .cout .safe button {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cartFormSection .mainContainer .content {
+  display: flex;
+}
+@media only screen and (max-width: 900px) {
+  .cartFormSection .mainContainer .content {
+    display: block;
+  }
+}
+.cartFormSection .mainContainer .content .formSection {
+  background: #FAFAFA;
+  padding: 30px 30px;
+  flex-basis: 30%;
+}
+.cartFormSection .mainContainer .content .formSection .tool {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  margin: 15px 0;
+}
+.cartFormSection .mainContainer .content .formSection .tool a {
+  color: #828282;
+  font-size: 12px;
+}
+.cartFormSection .mainContainer .content .formSection .tool img {
+  width: 3%;
+  margin-right: 5px;
+}
+.cartFormSection .mainContainer .content .formSection .gender {
+  display: flex;
+}
+.cartFormSection .mainContainer .content .formSection .gender .male {
+  margin-right: 10px;
+  position: relative;
+}
+.cartFormSection .mainContainer .content .formSection .gender .male input[type=radio] {
+  display: none;
+}
+.cartFormSection .mainContainer .content .formSection .gender .male input[type=radio]:checked + label {
+  background: #000;
+  color: #ffffff;
+}
+.cartFormSection .mainContainer .content .formSection .gender .male label {
+  display: block;
+  min-width: 50px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+.cartFormSection .mainContainer .content .formSection input {
+  border: 1px solid rgba(130, 130, 130, 0.4);
+  display: block;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  width: 100%;
+}
+.cartFormSection .mainContainer .content .formSection .req {
+  margin-bottom: 20px;
+}
+.cartFormSection .mainContainer .content .formSection .req input {
+  margin-bottom: 3px;
+}
+.cartFormSection .mainContainer .content .formSection .req label {
+  color: rgba(130, 130, 130, 0.8509803922);
+  font-size: 14px;
+}
+.cartFormSection .mainContainer .content .formSection .checkbox {
+  display: flex;
+  font-size: 14px;
+}
+.cartFormSection .mainContainer .content .formSection .checkbox input {
+  display: inline;
+  padding: 0;
+  width: 22px;
+  height: 18px;
+  margin-right: 10px;
+}
+.cartFormSection .mainContainer .content .formSection .checkbox-a input {
+  display: inline;
+  width: 20px;
+  height: 14px;
+}
+.cartFormSection .mainContainer .content .formSection select {
+  border: 1px solid rgba(130, 130, 130, 0.4);
+  color: rgba(139, 139, 139, 0.8509803922);
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.cartFormSection .mainContainer .content .formSection .street {
+  display: flex;
+  justify-content: space-between;
+}
+.cartFormSection .mainContainer .content .formSection .street input {
+  flex-basis: 65%;
+}
+.cartFormSection .mainContainer .content .formSection .street input:last-child {
+  padding: 15px 20px;
+  flex-basis: 33%;
+}
+.cartFormSection .mainContainer .content .formSection .post {
+  display: flex;
+  justify-content: space-between;
+}
+.cartFormSection .mainContainer .content .formSection .post input {
+  flex-basis: 42%;
+}
+.cartFormSection .mainContainer .content .formSection .post input:last-child {
+  padding: 15px 20px;
+  flex-basis: 56%;
+}
+.cartFormSection .mainContainer .content .payment {
+  flex-basis: 30%;
+}
+.cartFormSection .mainContainer .content .payment .paymentMethord .paypal {
+  background: #FAFAFA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  margin-bottom: 15px;
+}
+.cartFormSection .mainContainer .content .payment .paymentMethord .paypal .pay {
+  display: flex;
+  align-items: center;
+}
+.cartFormSection .mainContainer .content .payment .paymentMethord .paypal .pay input[type=radio] {
+  padding: 20px;
+}
+.cartFormSection .mainContainer .content .payment .paymentMethord .paypal .pay img {
+  margin-right: 20px;
+}
+.cartFormSection .mainContainer .content .payment .paymentMethord .invesment {
+  display: block;
+  background: #FAFAFA;
+  padding: 20px 20px;
+}
+.cartFormSection .mainContainer .content .payment .paymentMethord .invesment .bank {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.cartFormSection .mainContainer .content .payment .paymentMethord .invesment .bank .pay {
+  background: #FAFAFA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cartFormSection .mainContainer .content .payment .paymentMethord .invesment .cc input {
+  border: 1px solid rgba(130, 130, 130, 0.4);
+  display: block;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  width: 100%;
+}
+.cartFormSection .mainContainer .content .payment .paymentMethord .invesment .cc .cvv {
+  display: flex;
+  justify-content: space-between;
+}
+.cartFormSection .mainContainer .content .payment .paymentMethord .invesment .cc .cvv input {
+  flex-basis: 60%;
+}
+.cartFormSection .mainContainer .content .payment .paymentMethord .invesment .cc .cvv input:last-child {
+  flex-basis: 35%;
+}
+.cartFormSection .mainContainer .content .order {
+  flex-basis: 30%;
+}
+.cartFormSection .mainContainer .content .order .myProducts .psection .itemList {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  background: #FAFAFA;
+  border: 1px solid rgba(209, 206, 206, 0.1019607843);
+}
+.cartFormSection .mainContainer .content .order .myProducts .psection .all {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  background: #FAFAFA;
+  padding: 15px 20px;
+}
+.cartFormSection .mainContainer .content .order .myProducts .psection .all:last-child {
+  margin-bottom: 0;
+}
+.cartFormSection .mainContainer .content .order .myProducts .psection .all .products {
+  display: flex;
+}
+.cartFormSection .mainContainer .content .order .myProducts .psection .all .products .lastcheck .image {
+  display: flex;
+}
+.cartFormSection .mainContainer .content .order .myProducts .psection .all .products .lastcheck .image .pic {
+  margin-right: 20px;
+}
+.cartFormSection .mainContainer .content .order .myProducts .psection .all .products .lastcheck .image .productname h4 {
+  font-weight: 700;
+}
+.cartFormSection .mainContainer .content .order .myProducts .psection .all .products .lastcheck .image .productname p {
+  line-height: 25px;
+  color: rgb(185, 177, 177);
+}
+.cartFormSection .mainContainer .content .order .myProducts .psection .all .finalPrice .final {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+.cartFormSection .mainContainer .content .order .checkout .cout {
+  padding: 20px 20px;
+  background: #FAFAFA;
+  margin-bottom: 20px;
+}
+.cartFormSection .mainContainer .content .order .checkout .cout .delivery {
+  margin-bottom: 30px;
+}
+.cartFormSection .mainContainer .content .order .checkout .cout .delivery .SubTotal {
+  margin-bottom: 0;
+}
+.cartFormSection .mainContainer .content .order .checkout .safCheckout {
+  background: #FAFAFA;
+  padding: 20px 20px;
+}
+.cartFormSection .mainContainer .content .order .checkout .safCheckout .safe {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.cartFormSection .mainContainer .content .order .checkout .safCheckout .safe button {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+}
+.cartFormSection .mainContainer .content .order .checkout .safCheckout .checkbox {
+  display: flex;
+  font-size: 14px;
+  margin: 10px 0 20px 0;
+}
+.cartFormSection .mainContainer .content .order .checkout .safCheckout .checkbox input {
+  width: 22px;
+  height: 18px;
+  margin-right: 10px;
+}
+.cartFormSection .mainContainer .content .order .checkout .safCheckout .amount {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.cartFormSection .mainContainer .content .order .checkout .safCheckout .amount .vat {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.cartFormSection .mainContainer .content .order .checkout .safCheckout .amount .vat p:last-child {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  color: #A7A7A7;
+}
+.cartFormSection .mainContainer .content .order .checkout .safCheckout .amount .value {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #000;
+}
+.cartFormSection .mainContainer .content .order .checkout .safCheckout .amount .value p:last-child {
+  text-align: end;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  color: #A7A7A7;
 }
 
 html {

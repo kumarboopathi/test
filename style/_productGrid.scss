@@ -1,0 +1,114 @@
+.productGrid {
+    .mainContainer {
+        .container {
+            img {
+                // width: 100%;
+            }
+            display: grid;
+            grid-template-columns: 15% 15% 24% 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "leftside leftside leftside rightside rightside" "down1 down2 down3 . .";
+            column-gap: 20px;
+            row-gap: 20px;
+            @media only screen and (max-width: 900px) {
+                display: block;
+            }
+            .itemOne {
+                grid-area: leftside;
+                img {
+                    @media only screen and (max-width: 900px) {
+                        width: 100%;
+                    }
+                }
+            }
+            .itemTwo {
+                grid-area: rightside;
+                @media only screen and (max-width: 900px) {
+                    width: 100%;
+                }
+                .title {
+                    margin: 30px 0;
+                    h2 {
+                        line-height: 40px;
+                    }
+                    h5 {
+                        font-size: 22px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        line-height: 33px;
+                    }
+                    .addlist {
+                        @media only screen and (max-width: 900px) {
+                            width: 70%;
+                            margin: auto;
+                        }
+                        li {
+                            list-style: disc;
+                            line-height: 30px;
+                        }
+                    }
+                }
+                .addItem {
+                    @media only screen and (max-width: 900px) {
+                        width: 70%;
+                        margin: auto;
+                        margin-top: 40px;
+                        margin-bottom: 20px;
+                    }
+                    @media only screen and (max-width: 900px) {
+                        display: block;
+                    }
+                    display: flex;
+                    margin: 60px 0 20px 0;
+                    align-items: center;
+                    .numbers {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border: 1px solid black;
+                        padding: 8px 20px;
+                        img {
+                            img {
+                                display: inline-block;
+                            }
+                        }
+                        input {
+                            display: inline-block;
+                            width: 10px;
+                            border: none;
+                            outline: none;
+                            margin: 0 20px;
+                        }
+                    }
+                }
+                .shop {
+                    display: flex;
+                    align-items: center;
+                    i {
+                        border: 1px solid black;
+                        padding: 8px;
+                    }
+                }
+            }
+            .itemThree {
+                grid-area: down1;
+                @media only screen and (max-width: 900px) {
+                    display: none;
+                }
+            }
+            .itemFour {
+                grid-area: down2;
+                @media only screen and (max-width: 900px) {
+                    display: none;
+                }
+            }
+            .itemFive {
+                grid-area: down3;
+                @media only screen and (max-width: 900px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

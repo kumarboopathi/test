@@ -1,0 +1,151 @@
+.cartTable {
+    margin-top: 40px;
+    .mainContainer {
+        .content {
+            display: flex;
+            justify-content: space-between;
+            @media only screen and (max-width: 900px) {
+                display: block;
+                width: 100%;
+            }
+            .table {
+                flex-basis: 65%;
+                background: #FAFAFA;
+                thead {
+                    th {
+                        padding-top: 20px;
+                        @media only screen and (max-width: 900px) {
+                            font-size: 10px;
+                        }
+                    }
+                }
+                tbody {
+                    td {
+                        padding: 20px 30px;
+                        width: 100%;
+                        @media only screen and (max-width: 900px) {
+                            padding: 10px 10px;
+                        }
+                    }
+                    .data {
+                        display: flex;
+                        align-items: center;
+                        .dataName {
+                            margin-left: 10px;
+                            @media only screen and (max-width: 900px) {
+                                display: block;
+                                margin-top: 10px;
+                            }
+                            h5 {
+                                @media only screen and (max-width: 900px) {
+                                    font-size: 10px;
+                                }
+                            }
+                            p {
+                                @media only screen and (max-width: 900px) {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        @media only screen and (max-width: 900px) {
+                            display: block;
+                        }
+                    }
+                    .dataPrice {
+                        border: 1px solid black;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 7px 2px;
+                        width: 60px;
+                        input {
+                            width: 10px;
+                            border: none;
+                            outline: none;
+                        }
+                    }
+                }
+            }
+            .checkout {
+                flex-basis: 30%;
+                .cout {
+                    background: #FAFAFA;
+                    padding: 20px;
+                    .voucher {
+                        margin-bottom: 30px;
+                        p {
+                            font-size: 20px;
+                            font-weight: 700;
+                            span {
+                                font-size: 13px;
+                                font-weight: 400;
+                                color: #A7A7A7;
+                            }
+                        }
+                    }
+                    .code {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 30px;
+                        .in {
+                            input {
+                                width: 150px;
+                                padding: 7px 10px;
+                                font-size: 15px;
+                                font-weight: 600;
+                                color: #000;
+                            }
+                            .redeem {
+                                a {
+                                    font-family: Poppins;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                    .SubTotal {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: auto;
+                        margin-bottom: 30px;
+                        .sub {
+                            p {
+                                font-family: Poppins;
+                                font-size: 20px;
+                                font-weight: 600;
+                                line-height: 20px;
+                            }
+                            span {
+                                font-family: Poppins;
+                                font-size: 13px;
+                                font-weight: 400;
+                                color: #A7A7A7;
+                            }
+                        }
+                    }
+                    .amount {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 30px;
+                        font-family: Poppins;
+                        font-size: 17px;
+                        font-weight: 600;
+                        line-height: 10px;
+                    }
+                    .safe {
+                        width: 100%;
+                        margin: auto;
+                        button {
+                            color: #ffffff;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

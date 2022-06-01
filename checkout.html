@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="mainContainer">
+            <div class="logo">
+                <a href="./index.html"><img src="./image/logo.png" alt=""></a>
+            </div>
+            <div class="navbar">
+                <div class="searchBar">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <ul class="link">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="">SPACES</a></li>
+                    <li><a href="">PRODUCTS & SERVICES</a></li>
+                    <li><a href="">SHOWROOMS</a></li>
+                    <li><a href="">COMPANY</a></li>
+                    <li><a href="">MEDIA</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+                <div class="navbutton">
+                    <a href="./cartPage.html"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="cartTable cartFormSection">
+        <div class="mainContainer">
+            <div class="content">
+                <div class="formSection">
+                    <form>
+                        <div class="gender">
+                            <div class="male">
+                                <input type="radio" id="male" name="gender">
+                                <label for="male" class="gen">Mr.</label>
+                            </div>
+                            <div class="male">
+                                <input type="radio" id="female" name="gender">
+                                <label for="female">Mrs.</label>
+                            </div>
+                        </div>
+                        <input type="text" placeholder="First name*">
+                        <input type="text" placeholder="Last name*">
+                        <input type="email" placeholder="E-Mail">
+                        <div class="street">
+                            <input type="text" placeholder="Street*">
+                            <input type="text" placeholder="Houses*">
+                        </div>
+                        <div class="post">
+                            <input type="number" placeholder="PostCode*">
+                            <input type="text" placeholder="Location*">
+                        </div>
+                        <select name="" id="">
+                                        <option value="">Select Country</option>
+                                        <option value="">India</option>
+                                        <option value="">Singapore</option>
+                                        <option value="">Dubai</option>
+                                        <option value="">Pakisthan</option>
+                    
+                    
+                                    </select>
+                        <div class="req">
+                            <input type="number" placeholder="Phone Number" id="number">
+                            <label for="number">*Required field</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="box">
+                            <label for="box">Create a customer account now and benefit from many advantages.</label>
+                        </div>
+                        <div class="tool">
+                            <a href=""> <img src="./image/tool.png" alt="">The password will be sent to you by email</a>
+                        </div>
+                        <div class="checkbox-a">
+                            <input type="radio" id="ship">
+                            <label for="ship">Shipping Address is Different</label>
+                        </div>
+                        <input type="text" placeholder="First name*">
+                        <input type="text" placeholder="Last name*">
+                        <div class="street">
+                            <input type="text" placeholder="Street*">
+                            <input type="text" placeholder="Houses*">
+                        </div>
+                        <div class="post">
+                            <input type="number" placeholder="PostCode*">
+                            <input type="text" placeholder="Location*">
+                        </div>
+                        <select>                                    
+                            <option value="">Select Country</option>                                       
+                            <option value="">India</option>                                      
+                            <option value="">Singapore</option>                                     
+                            <option value="">Dubai</option>                                       
+                            <option value="">Pakisthan</option>                   
+                        </select>
+                    </form>
+                </div>
+                <div class="payment">
+                    <div class="paymentMethord">
+                        <div class="paypal">
+                            <div class="pay">
+                                <img src="./image/paypal.png" alt="">
+                                <label for="pay">Pay Pal</label>
+                            </div>
+                            <input type="radio" id="pay" name="paypal">
+                        </div>
+                        <div class="paypal">
+                            <div class="pay">
+                                <img src="./image/paypal.png" alt="">
+                                <label for="pal">Pay Pal Plus</label>
+                            </div>
+                            <input type="radio" id="pal" name="paypal">
+                        </div>
+                        <div class="paypal invesment">
+                            <div class="bank">
+                                <div class="pay">
+                                    <img src="./image/BAN.png" alt="">
+                                    <label for="pal">Investment Bank</label>
+                                </div>
+                                <input type="radio" id="pal" name="paypal">
+                            </div>
+                            <div class="cc">
+                                <input type="text" placeholder="Credit card number*">
+                                <div class="cvv">
+                                    <input type="text" placeholder="Expiry Date*">
+                                    <input type="text" placeholder="CVC / CVV*">
+                                </div>
+                                <input type="text" placeholder="Name of Cardholder*">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="myProducts">
+                        <div class="psection">
+                            <div class="itemList">
+                                <h3>Article</h3>
+                                <h3>Total SAR</h3>
+                            </div>
+                            <div class="all">
+                                <div class="products">
+                                    <div class="lastcheck">
+                                        <!-- <h3>Article</h3> -->
+                                        <div class="image">
+                                            <div class="pic">
+                                                <img src="./image/tableimage.png" alt="">
+                                            </div>
+                                            <div class="productname">
+                                                <p>1x</p>
+                                                <p>Lorem Ipsum</p>
+                                                <h4>Lorem Ipsum</h4>
+                                                <p>Lorem Ipsum</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="finalPrice">
+                                    <!-- <h3>Total SAR</h3> -->
+                                    <div class="final">
+                                        <p>699.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all">
+                                <div class="products">
+                                    <div class="lastcheck">
+                                        <!-- <h3>Article</h3> -->
+                                        <div class="image">
+                                            <div class="pic">
+                                                <img src="./image/tableimage.png" alt="">
+                                            </div>
+                                            <div class="productname">
+                                                <p>1x</p>
+                                                <p>Lorem Ipsum</p>
+                                                <h4>Lorem Ipsum</h4>
+                                                <p>Lorem Ipsum</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="finalPrice">
+                                    <!-- <h3>Total SAR</h3> -->
+                                    <div class="final">
+                                        <p>699.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all">
+                                <div class="products">
+                                    <div class="lastcheck">
+                                        <!-- <h3>Article</h3> -->
+                                        <div class="image">
+                                            <div class="pic">
+                                                <img src="./image/tableimage.png" alt="">
+                                            </div>
+                                            <div class="productname">
+                                                <p>1x</p>
+                                                <p>Lorem Ipsum</p>
+                                                <h4>Lorem Ipsum</h4>
+                                                <p>Lorem Ipsum</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="finalPrice">
+                                    <!-- <h3>Total SAR</h3> -->
+                                    <div class="final">
+                                        <p>699.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <div class="cout">
+                            <div class="voucher">
+                                <p>Do you have a voucher? <span>(Optional)</span></p>
+                            </div>
+                            <div class="code">
+                                <div class="in">
+                                    <input type="text" placeholder="Enter the code">
+                                </div>
+                                <div class="button redeem">
+                                    <button><a href="">Redeem</a></button>
+                                </div>
+                            </div>
+                            <div class="delivery">
+                                <div class="SubTotal">
+                                    <div class="sub">
+                                        <p>Subtotal</p>
+                                        <span>shipping</span>
+                                    </div>
+                                    <div>
+                                        <div class="sub">
+                                            <p>2.070.00</p>
+                                            <span>103.50</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="days">
+                                    <p>Delivery time 2 - 4 working days</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="safCheckout">
+                            <div class="button safe">
+                                <button>checkout</button>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="box">
+                                <label for="box">T&C is simply dummy text of the printing and typesetting industry</label>
+                            </div>
+                            <div class="amount">
+                                <div class="vat">
+                                    <p>Total </p>
+                                    <p>(VAT)</p>
+                                </div>
+                                <div class="value">
+                                    <p>143,91 SAR</p>
+                                    <p>7,195.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<footer>
+    <div class="mainContainer">
+        <div class="footerSub">
+            <div class="submit">
+                <img src="./image/footerlogo.png" alt="">
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram-square"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+
+            </div>
+            <div class="submit">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#">Sand Stone</a></li>
+                    <li><a href="#">Stone</a></li>
+                    <li><a href="#">Cement</a></li>
+                    <li><a href="#">Soft Stone</a></li>
+                </ul>
+            </div>
+            <div class="submit">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Measurement Service</a></li>
+                    <li><a href="#">Product Advice</a></li>
+                    <li><a href="#">Interior Design</a></li>
+                </ul>
+            </div>
+            <div class="submit">
+                <div class="contact" id="here">
+                    <h3>Contact informationgories</h3>
+                    <p>
+                        3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, An Nuzhah, Riyadh 12474, Saudi Arabia
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lastFooter">
+        <div class="copyRight">
+            <p>Copyright © 2022 | All Rights Reserved.</p>
+        </div>
+        <div class="flast">
+            <p>Created with love by thecreation.design</p>
+        </div>
+    </div>
+</footer>

@@ -13,6 +13,15 @@
 @import"./catalog";
 @import"./category";
 @import"./categoryProduct";
+@import"./productDetail";
+@import"./productGrid";
+@import"./related";
+@import"./recentlyViewed";
+@import"./productContent";
+@import"./cartpage";
+@import"./cartTable";
+@import"./checkout";
+@import"./formSection";
 html {
     scroll-behavior: smooth;
 }

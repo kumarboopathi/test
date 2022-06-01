@@ -1,0 +1,35 @@
+.productDetail {
+    background: #161414;
+    .mainContainer {
+        background: url(../image/productbgimage.png);
+        .next {
+            display: flex;
+            li {
+                margin-right: 10px;
+                padding: 30px 0;
+                &::after {
+                    content: "";
+                    border: solid rgb(238, 232, 232);
+                    border-width: 0 2px 2px 0;
+                    display: inline-block;
+                    padding: 3px;
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    margin-left: 6px;
+                }
+                a {
+                    color: #ffffff;
+                }
+                &:hover {
+                    text-decoration: underline;
+                    color: rgb(100, 87, 87);
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
